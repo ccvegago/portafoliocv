@@ -1,0 +1,556 @@
+/* Fuente de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c' ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: white;
+}
+/* Estilo del inicio */
+.start{
+    background: linear-gradient(to right, #83848e, #7160347d);
+    clip-path: polygon(100% 0, 100% 100%, 0 65%, 0 0);
+    height: 95vh;
+    padding: 0px 20px;
+}
+.start .contentstart{
+    max-width: 1100px;
+    margin: auto;
+    color: #FFF
+}
+
+/* Cambio de color contenedor incio cuando pasa el cursor */
+.start:hover{
+    background-color: #09a5a5;
+}
+
+
+/* Se organiza el menu y los iconos, las barras del menu - icono red social */
+.start header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+/* Camibamos el color del titulo principal y le asignamos flex */
+.start .logo img{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+.start .logo{
+    display: flex;
+    align-items: center;
+    color: #f5ce8e;
+    font-size: 25px;
+}
+.start .logo-image{
+    display: inline-block;
+    margin-right: 20px;
+    max-width: 50px;
+    margin:auto;
+}
+
+/*  Se paramos el icono del titulo principal. */
+.start .logo i{
+    display: inline-block;
+    margin-right: 20px;
+}
+/* Cambios el estilo del menu */
+#start header nav a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+/*  se agrega un border inferior al bottom */
+#start header nav a:hover{
+    border-bottom: 2px solid #533b2b;
+}
+.start .social a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+}
+/* al pasar el mouse cambia de color el icono de las redes sociales */
+.start .social a:hover{
+    color: #ff5b00;
+}
+/* organizamos con flex lo contenido de la imagen y sub titulo*/
+.start .row{
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+/* las fila ocupan un 50 % */
+.start .row .col{
+    width: 50%;
+}
+
+/* estilo h2 row */
+.start .row .col h2{
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.start .row .col p{
+    margin-bottom: 20px;
+}
+.start .row .col .content-img{
+    max-width: 400px;
+    margin:auto;
+}
+.start .row .col .content-img img{
+    width: 100%;
+}
+.start .row .col button{
+    background: none;
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid #6c4b1c;
+    color: #fff;
+    background: linear-gradient(to right, #4d806a, #6c4b1c);
+    transition: .5s;
+    cursor: pointer;
+}
+.start .row .col button:hover{
+    transform: scale(1.1);
+}
+#icono-nav{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    display: none;
+}
+#icono-nav:hover{
+    background-color: #3e3e3e;
+}
+.shadow{
+    filter:drop-shadow(0em 30px 20px #9bd2f4)
+}
+
+/* -----------------Estilos apartado submenu servicios */
+
+/* damos tamaño en general de los servicios z-index, suporpone los elementos. */
+.services{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    top: -170px;
+    z-index: 10;
+}
+/* Color de fondo cuando pasamos el cursor */
+.services .row .col .card:hover{
+    box-shadow: 0 0 15px 0 #454c50;
+}
+
+/*  se le da a la clase fila un espacio igual entre ellas. */
+.services .row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+/* centramos la clase fila y col */
+.services .row .col{
+    text-align: center;
+    width: 30%;
+}
+/* a cada div, dejamos un border y le indicamos el tamaño ideal. */
+.services .row .col .card{
+    border: 1px solid #8d8d8d;
+    height: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    position:relative;   
+}
+/*  se determina los parametros del icono */
+.services .icono{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/* se crea un circulo color y tamaño al icono */
+.services .icono .circle{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 3px solid #785d42;
+    box-shadow: 0 0 15px 0 #a27624;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #506749;
+    font-size: 30px;
+}
+/* le damos espacio a la etiqueta h3 */
+.services h3{
+    margin-bottom: 20px;
+}
+/* damos estilo a la etiqueta p */
+.services .card p{
+    color: #605e5e;
+    line-height: 28px;
+    font-size: 12px;
+}
+/* damos estilo a la etiqueta a, centramos con transform */
+.services .card a{
+    text-decoration: none;
+    color: #008cff;
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+/* ----------Estilos apartado submenu servicios */
+/* damos estilo a la classe skills */
+.skills{
+    background: linear-gradient(to right, #83848e, #7160347d);
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+    top: -100px;
+}
+/* Cnentra la etiqueta h2 */
+.skills h2{
+    text-align: center;
+}
+/* declara tamaños */
+.skills .content-skill{
+    max-width: 1100px;
+    margin: auto;
+}
+/* La clase row se aplica flex y se da espacio. */
+.skills .row{
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    padding: 10px;
+    margin:auto 0;
+}
+.score .box{
+    width: 100%;
+}
+.score .box h2{
+    display: block;
+    text-align: center;
+}
+/* estilo de grafico con la clase chart */
+.score .box .chart{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    line-height: 160px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*  Clase que se genera dinamicamente por la libreria de graficos */
+.score .box canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ------- Estilos apartado submenu Trabajos*/
+
+/* Se da tamaño a la class jobs */
+.jobs{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+.jobs h2{
+    text-align: center;
+}
+.jobs nav{
+    text-align: center;
+    margin: 30px 0;
+}
+/* Se da estilo a la etiqueta a dentro del nav */
+.jobs nav a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    color: #6b5838;
+    font-weight: bold;
+    padding: 3px 10px;
+    border: 3px solid transparent;
+}
+/* cuando el cursor del mouse pase por los items cambia el diseño */
+.jobs nav a:hover{
+    border: 3px solid #94be91;
+}
+/* Esta clase se agregará dinamicamente cuand ose seleccione una opción. */
+.borde{
+    border: 3xp solid #94be91;
+}
+/* Se le indica el tamño que ocupara la imagen */
+.jobs .gallery .item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+/* indicamos que las columnas tengan un espacio y aplicamos auto-fit, con el fin de que no se desformen las imagenes segun el tamaño de la pantalla */
+.jobs .gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-gap: 30px;
+}
+/* se indica a la clase item de la imagenes que la posisción se a relativa y se agrega estilos */
+.jobs .gallery .item{
+    position: relative;
+    overflow: hidden;
+    border: 0.5px solid #8d8d8d;
+    border-radius: 12px;
+}
+/* Damos animación, estilo y tamaño a la clase info */
+.jobs .gallery .item .info{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #e1f4f6;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+/* se da estilo a la etiqueta h3 de la clase info */
+.jobs .gallery .item .info h3{
+    color: #000;
+    margin-bottom: 20px;
+}
+/* se da estilo a la etiqueta span de la clase info */
+.jobs .gallery .item .info span{
+    color: #454c50;
+    display: inline-block;
+    border: 2px solid #454c50;
+    margin: 0.1px 3px 10px;
+    padding: 0 5px;
+}
+
+/* se da estilo a la etiqueta a de la clase info */
+.jobs .gallery .item .info a{
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: #007be5;
+    font-weight: bold;
+}
+/* cuando se pase el cursor sobre las imaganes este se opaca y activa la animación, declarada anteriormente. */
+.jobs .gallery .item:hover .info{
+    opacity: 1;
+    top:0;
+}
+
+/* ------------Sector Responsive */
+@media screen and (max-width:1180px){
+    .start{
+        clip-path: none;
+    }
+}
+/* Cuando la imagen se max 800 px, el menu cambiara de posición y se dará estilos. */
+@media screen and (max-width:800px){
+    .social{
+        display:none;
+    }
+    #nav{
+        display: none;
+    }
+    /* en el menu, se dan tamaños y cuando este sea 800 o menor se aplicara el color y los flex indicados. */
+    #nav.responsive{
+        background-color: rgba(0,0,0,.9);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+    /* a la etiqueta a se da estilo al tamaño de la letra */
+    #nav.responsive a{
+        font-size: 30px;
+    }
+    /* id icono-nav se declara que tenga un bloque */
+    #icono-nav{
+        display: block;
+    }
+    /* la clase start tenga un alto automatico */
+    .start{
+        height: auto;
+    }
+    /* la clase row, se declara que tenga un bloque */
+    .start .row{
+        display: block;
+    }
+    /* la clase col, tenga un ancho y que centre el texto */
+    .start .row .col{
+        width: 100%;
+        text-align: center;
+    }
+    /* etiqueta h2,  margen superior*/
+    .start .row .col h2{
+        margin-top: 20px;
+    }
+    /* clase content-img ancho y margen superior */
+    .start .row .col .content-img{
+        width: 50%;
+        margin-top: 30px;
+    }
+    /* clase services posición estatica y tamaño en los bordes internos */
+    .services{
+        position: static;
+        padding: 20px;
+    }
+    /* clase row se declara que sea un bloque */
+    .services .row{
+        display: block;
+        margin-bottom: 0;
+    }
+    /* clase col, altura y margen */
+    .services .row .col{
+        width: 70%;
+        margin: auto;
+    }
+    /* clase card, margen inferior */
+    .services .row .col .card{
+        margin-bottom: 20px;
+    }
+    /* clase skills,  posición estatica */
+    .skills{
+        position: static;
+    }
+    /* etiqueta a, margen arriba y abajo 0 y izquierda derecha 5 */
+    .jobs nav a{
+        margin: 0 5px;
+    }
+
+}
+
+/* contacto */
+
+.form-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 55px;    
+    margin-top: 45px;
+    box-shadow: 0 0 20px rgba(254, 0, 21, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+}
+.contact h2{
+    color:#4d6786;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.input-group label{
+    color: #0e0e0e;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.input-group input, textarea{
+    padding: 17px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid #f0faf1;
+    outline: none;
+}
+
+.input-group input::placeholder, textarea::placeholder{
+    color: #c5d4b3;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a{
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.input-group .btnsend{
+    font-size: 16px;
+    color: #fffefe;
+    border: 0;
+    border-radius: 25px;
+    background-color: #60c85d;
+    box-shadow: 0 0 20px rgb(6, 234, 25);
+    cursor: pointer;
+}
+
+.input-group .btnsend:hover{
+    background-color: #61f65c;
+}
+
+@media(max-width: 991px){
+    .contact{
+        padding: 50px 30px;
+        width: 80%;
+    }
+    .input-group{
+        padding: 15px;
+    }
+    
+}
+
+/* // -- Footer */
+
+.textfooter {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding-top: 10px;
+    color: #949191;
+    background-color: #000000;
+    text-align: center;
+}

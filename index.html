@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Libreria para los graficos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Libreria de fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!-- Apartado donde ira el incio -->
+    <span class="shadow">
+    <section id="start" class="start">
+        <!-- Funcion donde pasa el cursor y se opaca el fondo no funciono se hizo por el css -->
+        <!-- onmouseenter="mouseCursor(event)" onmouseleave="mouseOut(event) -->
+        <div id="contentstart" class="contentstart" ">
+            <header>   
+                <div class="logo">
+                    <!-- <i class="fa-brands fa-codepen"></i> -->
+                    <img class="logo2" src="img/logo2.png" alt="">
+                    <h1>Cristian Vega</h1>
+                </div>
+                <nav id="nav" class="">
+                 <a href="#start">Inicio</a>
+                 <a href="#services">Servicios</a>
+                 <a href="#skills">Habilidades</a>
+                 <a href="#jobs">Trabajos</a>
+                 <a href="#contact">Contacto</a>
+                </nav>
+                <!-- Icono menu responsivo -->
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </header>
+
+            <div class="row">
+                <div class="col">
+                    <h2>Dev Jr. Fullstack</h2>
+                    <p>Soy una persona que desea aprender y crecer en el mundo del desarrollo web, estoy decidido adquirir nuevas habilidades y conocimientos en este maravilloso y emocionante industria tecnológica. Mi enfoque es mejorar constantemente y con es fuerzo poder dominar diferentes aspectos del desarrollo web. </p>
+                    <button class="btn btn-1">Descargar CV</button>
+                </div>
+                <div class="col">
+                    <div class="content-img">
+                        <img src="img/fondo3.PNG" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </span>
+    
+    <!-- apartado de submenu servicios -->
+    <section id="services" class="services">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color1">
+                        <div class="circle">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                    </div>
+                    <h3>Desarrollo Backend</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia modi, voluptas obcaecati mollitia non quam deleniti.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color2">
+                        <div class="circle">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                    </div>
+                    <h3>Maquetación Web</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia modi, voluptas obcaecati mollitia non quam deleniti laboriosam.</p>
+                    
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color3">
+                        <div class="circle">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                    </div>
+                    <h3>En proceso</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia modi, voluptas obcaecati mollitia non quam deleniti laboriosam.</p>
+                    
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="icono color4">
+                        <div class="circle">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                    </div>
+                    <h3>Lorem</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia modi, voluptas obcaecati mollitia non quam deleniti laboriosam opti.</p>
+
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="icono color5">
+                        <div class="circle">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                    </div>
+                    <h3>Lorem2</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia modi, voluptas obcaecati mollitia non quam deleniti laboriosam optio.</p>
+                    <a href="#">Leer Más</a>
+                </div>
+            </div> 
+            <div class="col">
+                <div class="card">
+                    <div class="icono color6">
+                        <div class="circle">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                    </div>
+                    <h3>Lorem3</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia modi, voluptas obcaecati mollitia non quam deleniti laboriosam.</p>
+                    
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- apartado de submenu habilidades -->
+    <section class="skills" id="skills">
+        <div class="content-skill">
+            <h2>Habilidades</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="5">
+                                5%
+                            </div>
+                            <h2>HTML & CSS</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="2">
+                                2%
+                            </div>
+                            <h2>BOOSTRAP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="5">
+                                2%
+                            </div>
+                            <h2>JAVASCRIPT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="5">
+                                5%
+                            </div>
+                            <h2>MYSQL</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="5">
+                                5%
+                            </div>
+                            <h2>PHP</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="score">
+                        <div class="box">
+                            <div class="chart" data-percent="2">
+                                2%
+                            </div>
+                            <h2>PYTHON</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- apartado de submenu trabajos, aunque pues lo dejo en blanco ya que aun no he hecho nada :(-->
+    <section id="jobs" class="jobs">
+        <h2>Mis Trabajos</h2>
+
+        <nav>
+            <!-- <a href="javascript:void(0)" class="borde" id="item">Todos</a> -->
+            <a href="javascript:void(0)" class="borde" id="programming">Programación</a>
+            <a href="javascript:void(0)" class="borde" id="prox1">Proximo</a>
+            <!-- <a href="javascript:void(0)" class="borde" id="prox2">Proximo</a> -->
+        </nav>
+
+        <div class="gallery">
+            <div class="item programming">
+                <img src="img/programming.PNG" alt="">
+                <div class="info">
+                    <h3>Programación Backend</h3>
+                    <span>html</span><span>css</span><span>javascript</span><span>PHP</span><SPan>MYSQL</SPan>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item prox1">
+                <img src="img/programming2.PNG" alt="">
+                <div class="info">
+                    <h3>Maquetación Web</h3>
+                    <span>html</span><span>css</span><span>javascript</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+            <div class="item prox2">
+                <img src="img/bd.png" alt="">
+                <div class="info">
+                    <h3>Bases de Datos</h3>
+                    <span>Scripts</span><span>Consultas</span><span>MYSQL</span>
+                    <a href="#">Ver Trabajo</a>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+
+    <!-- Contacto -->
+    <div class="form-contact">
+    <form id="contact" class="contact">
+        <h2>Contacto</h2>
+        <div class="input-group">
+            <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Nombre">
+            <label for="phone">Telefono</label>
+                <input type="tel" name="phone" id="phone" placeholder="Telefono">
+            <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            <label for="message">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <div class="form-txt">
+                <a href="#">Politica de privacidad</a>
+                <a href="#">Terminos y condiciones</a>
+            </div>
+
+            <input class="btnsend" type="submit" value="Enviar">
+
+        </div>
+    </form>
+    </div>
+<footer>
+    <div class="textfooter">
+        <span>&copy;2023, Cristian Vega. Todos los derechos reservados.</span>
+    </div>
+</footer>
+<!-- Seccion de javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
